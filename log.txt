@@ -1,0 +1,6 @@
+11:48:56  29/07/2019 - ERROR - Problem writing attachment to local drive.
+11:48:56  29/07/2019 - ERROR - Problem writing attachment to local drive.
+12:03:36  29/07/2019 - ERROR - Unspecified problem downloading attachments.
+12:04:19  29/07/2019 - Saved attachment UnitPO-INTERNAL-20190729_120419_1.csv in C:\Software\EDI\. Sent from jturner@companyname.co.uk
+12:07:53  29/07/2019 - Saved attachment UnitPO-GMAIL-20190729_120753_1.csv in C:\Software\EDI\. Sent from testing4jack@gmail.com
+12:07:53  29/07/2019 - Saved attachment UnitPO-INTERNAL-20190729_120753_1.csv in C:\Software\EDI\. Sent from jturner@companyname.co.uk
