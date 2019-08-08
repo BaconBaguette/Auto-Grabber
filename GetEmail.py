@@ -15,7 +15,7 @@ now = datetime.datetime.now()   # Gets the current date time
 errNow = now.strftime("%H:%M:%S  %d/%m/%Y") # Converts datetime to format to be used in logging
 fNow = now.strftime("%Y%m%d_%H%M%S")    # Converts datetime to format to be used in file naming
 
-email_add = config['login']['email']       # Login credentials. If this wants to run with no human intervention I'm not sure what we can do but hardcode them? Should be more secure when compiled to an exe.
+email_add = config['login']['email']      
 email_pass = config['login']['emailpass']
 
 directory = config['paths']['targetdir']     # The directory in which email attachments will be saved
@@ -47,7 +47,7 @@ def dlAtt(folder, acc):     # Runs through the specified mailbox and downloads a
             for attachment in item.attachments:            # FileType here
                 attName = attachment.name.upper()
                 if isinstance(attachment, FileAttachment) and 'GOUNITPO' in attName and 'CSV' in attName:
-                    filename = 'GOUnitPO-' + customer + '-' + fNow + '_' + str(count) + '.csv'
+                    filename = 'UnitPO-' + customer + '-' + fNow + '_' + str(count) + '.csv'
                     local_path = directory + customer + '\\' + filename
                     if not os.path.exists(directory + customer):
                         os.makedirs(directory + customer)
