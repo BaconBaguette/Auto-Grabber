@@ -46,7 +46,7 @@ def dlAtt(folder, acc):     # Runs through the specified mailbox and downloads a
             customer = lookup[item.sender.email_address]
             for attachment in item.attachments:            # FileType here
                 attName = attachment.name.upper()
-                if isinstance(attachment, FileAttachment) and 'GOUNITPO' in attName and 'CSV' in attName:
+                if isinstance(attachment, FileAttachment) and 'UNITPO' in attName and 'CSV' in attName:
                     filename = 'UnitPO-' + customer + '-' + fNow + '_' + str(count) + '.csv'
                     local_path = directory + customer + '\\' + filename
                     if not os.path.exists(directory + customer):
